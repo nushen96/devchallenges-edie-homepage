@@ -348,8 +348,8 @@ header {
 }
 
 .team-member-image-box {
-    width: 12rem;
-    height: 12rem;
+    width: fit-content;
+    height: fit-content;
     border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
     -moz-border-radius: 1.5rem;
@@ -358,8 +358,6 @@ header {
 }
 
 .team-member-image-box img {
-    width: 100%;
-    height: 100%;
     border-radius: inherit;
     -webkit-border-radius: inherit;
     -moz-border-radius: inherit;
@@ -369,6 +367,10 @@ header {
 
 .team-member-image-box {
     grid-row: span 2;
+}
+
+.team-member1 {
+    align-self: end;
 }
 
 .team-member1, .team-member2 {
