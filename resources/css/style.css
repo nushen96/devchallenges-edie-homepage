@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Montserrat:wght@700&family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Montserrat:wght@500;700&family=Poppins:wght@400;500;700&display=swap");
 
 
 * {
@@ -19,12 +19,13 @@
   --gray4: #bdbdbd;
   --gray5: #e0e0e0;
   --gray6: #f2f2f2;
+  --black: #100E1D;
 }
 
 body {
     font-size: 18px;
     font-weight: 400;
-    padding: 24px 0;
+    padding: 24px 0 0;
     color: var(--gray1)
 }
 
@@ -44,10 +45,16 @@ button {
     -o-border-radius: 0.5rem;
 }
 
+section, .row {
+    width: 80%;
+}
 
 section {
-    width: 80%;
     margin: 5rem auto 3rem;
+}
+
+.row {
+    margin: 0 auto;
 }
 
 h3 {
@@ -64,6 +71,15 @@ h4,h5 {
 
 p {
     color: var(--gray2);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--main-color)
 }
 
 /*++++++++++++++++++ HEADER +++++++++++++++++++++*/
@@ -153,12 +169,12 @@ header {
     margin-bottom: 2.5rem;
 }
 
-.hero-content label {
+.contact-form label {
     color: var(--gray3);
     font-size: 77%;
 }
 
-.hero-content .input-with-button {
+.input-with-button {
     background-color: var(--gray6);
     display: flex;
     padding: 5px;
@@ -425,4 +441,53 @@ header {
 .testimonial-author-info .testimonial-author-company {
     font-weight: 500;
     color: var(--gray3);
+}
+
+
+/*++++++++++++++++++ FOOTER +++++++++++++++++++++*/
+footer {
+    margin-top: 10rem;
+    padding: 2rem 0 0.7rem;
+    background-color: var(--black);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.footer-content .footer-menu .menu-item {
+    display: block;
+    margin: 1rem 0 0;
+}
+
+.footer-content .footer-menu .menu-item:first-child {
+    margin: 0;
+}
+
+.socials {
+    font-size: 140%;
+}
+
+.footer-form.contact-form label {
+    color: var(--gray6)
+}
+
+.footer-copyright {
+    color: var(--gray6);
+    font-size: 80%;
+    font-weight: 500;
+}
+
+.footer-copyright .copyright-author-link {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
 }
