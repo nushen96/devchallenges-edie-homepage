@@ -251,14 +251,32 @@ header {
     position: relative;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    row-gap: 5rem;
+    grid-template-rows: repeat(12, auto);
     column-gap: 1.5rem
 }
-.work-box:nth-of-type(2n-1) {
-    position: relative;
-    top: 11.5rem;
+
+.work-box:first-child {
+    grid-row: 2 / span 4;
 }
+
+.work-box:nth-child(2) {
+    grid-row: 8 / span 5;
+}
+
+.work-box:nth-child(3) {
+    grid-row: 1 / span 4;
+    grid-column: 3;
+}
+
+.work-box:last-child {
+    grid-row: 7 / span 5;
+    grid-column: 3;
+}
+
+.work-box:nth-child(3),.work-box:nth-child(4) {
+    justify-self: end;
+}
+
 .work-image-container {
     width: fit-content;
     overflow: hidden;
@@ -286,6 +304,16 @@ header {
 }
 
 .work-box .work-title {
+    font-weight: 500;
+}
+
+.more-works-link {
+    text-align: end;
+}
+
+.more-works-link a {
+    text-decoration: none;
+    color: var(--main-color);
     font-weight: 500;
 }
 
