@@ -317,3 +317,65 @@ header {
     font-weight: 500;
 }
 
+/*++++++++++++++++++ TEAM +++++++++++++++++++++*/
+.team-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-title {
+    max-width: 8em;
+}
+
+.team-subtitle {
+    color: var(--red);
+    font-weight: 500;
+}
+
+.team-description {
+    font-size: 90%;
+    max-width: 15em;
+
+}
+
+.team-members-container {
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+}
+
+.team-member-image-box {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+.team-member-image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
+
+.team-member-image-box {
+    grid-row: span 2;
+}
+
+.team-member1, .team-member2 {
+    grid-column:3;
+}
+
+.team-member3 {
+    grid-column: 1;
+    grid-row: 2 / span 2
+}
