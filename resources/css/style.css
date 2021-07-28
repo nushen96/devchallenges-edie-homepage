@@ -46,7 +46,7 @@ button {
 }
 
 section, .row {
-    width: 80%;
+    width: 90%;
 }
 
 section {
@@ -122,6 +122,11 @@ header {
 .menu-item a {
     text-decoration: none;
     color: inherit;
+}
+
+.mobile-menu {
+    font-size: 150%;
+    display: none;
 }
 
 .hero-subtitle {
@@ -229,11 +234,12 @@ header {
 }
 
 .front-end-service-box .service-icon {
-    background-color: var(--red);
+    background-color: var(--green);
+    
 }
 
 .back-end-service-box .service-icon {
-    background-color: var(--green);
+    background-color: var(--red);
 }
 
 .service-box .service-button {
@@ -429,6 +435,7 @@ header {
 }
 
 .testimonial-author-info {
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
